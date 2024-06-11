@@ -30,5 +30,66 @@ nav ul{
 
 nav li{
     height: 60px;
-    
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+nav a{
+    height:100%;
+    padding: 0px 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+nav a:hover{
+    fill: #fff;
+}
+
+.icon{
+    fill: #fff;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 280px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+}
+
+@media (max-width: 800px){
+    .hideMobile{
+        display: none;
+    }
+}
+
+@media (min-width: 800px){
+    .hideDesktop{
+        display: none;
+    }
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    color: #fff;
+    flex-direction: column;
+    text-align: center;
 }
